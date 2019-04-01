@@ -1,0 +1,9 @@
+Namespace(data='data/', dev='verb_physics_dev_5', devtest='true', embeddingSize=300, embtype='glove', four='true', onepole='false', poleSensitivity='false', poleWord1='slow', poleWord2='speedy', reverse='true', test='verb_physics_test_5', test_relation='all', train='verb_physics_train_5', zero='false')
+Dev Accuracy: 0.71
+Test Accuracy: 0.72
+Dev Accuracy: 0.49
+Test Accuracy: 0.49
+Dev Accuracy: 0.49
+Test Accuracy: 0.49
+Dev Accuracy: 0.40
+Test Accuracy: 0.38

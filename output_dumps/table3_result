@@ -1,0 +1,35 @@
+//Glove
+INFO:pce:Test Accuracy: 0.71
+INFO:pce:Test Accuracy: 0.71
+INFO:pce:Test Accuracy: 0.71
+INFO:pce:Test Accuracy: 0.71
+INFO:pce:Test Accuracy: 0.71
+INFO:pce:Test Accuracy: 0.71
+INFO:pce:Test Accuracy: 0.71
+INFO:pce:Test Accuracy: 0.71
+INFO:pce:Test Accuracy: 0.71
+INFO:pce:Test Accuracy: 0.71
+
+//Word2Vec
+INFO:pce:Test Accuracy: 0.67
+INFO:pce:Test Accuracy: 0.67
+INFO:pce:Test Accuracy: 0.67
+INFO:pce:Test Accuracy: 0.67
+INFO:pce:Test Accuracy: 0.67
+INFO:pce:Test Accuracy: 0.67
+INFO:pce:Test Accuracy: 0.67
+INFO:pce:Test Accuracy: 0.67
+INFO:pce:Test Accuracy: 0.67
+INFO:pce:Test Accuracy: 0.67
+
+//LSTM
+INFO:pce:Test Accuracy: 0.69
+INFO:pce:Test Accuracy: 0.69
+INFO:pce:Test Accuracy: 0.70
+INFO:pce:Test Accuracy: 0.69
+INFO:pce:Test Accuracy: 0.69
+INFO:pce:Test Accuracy: 0.70
+INFO:pce:Test Accuracy: 0.69
+INFO:pce:Test Accuracy: 0.69
+INFO:pce:Test Accuracy: 0.70
+INFO:pce:Test Accuracy: 0.69
