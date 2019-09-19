@@ -1,6 +1,6 @@
 ## Description
 This project reproduces the results from the paper [Extracting Commonsense Properties from Embeddings with Limited
-Human Guidance](https://www.aclweb.org/anthology/P18-2102)
+Human Guidance](https://www.aclweb.org/anthology/P18-2102). The final summary of this project is summarized in this [report](https://github.com/DishaJindal/ObjectPropertyCommonSense/blob/master/Report.pdf).
 ## Folders
 
 **data**: Contains data files
