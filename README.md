@@ -1,12 +1,19 @@
-Folders
+## Description
+This project reproduces the results from the paper [Extracting Commonsense Properties from Embeddings with Limited
+Human Guidance](https://www.aclweb.org/anthology/P18-2102)
+## Folders
 
-data: Contains data files
-figs: Contains output plots, also added in the report
-output_dumps: The results of all runs for reference
+**data**: Contains data files
 
-Scripts
+**figs**: Contains output plots, also added in the report
 
-Main Script: script.py
+**output_dumps**: The results of all runs for reference
+
+## Code Walkthrough
+
+### Scripts
+#### Main Script: script.py
+
 	Argument Description
 	--data data/ : The folder containng the data files
 	--test verb_physics_test_5 : Test Data File
@@ -33,32 +40,34 @@ Main Script: script.py
 	# To Run one configuration of 4 way model(Example Configuration)
 	python script.py --train train_data --test test_data --devtest false --four true --reverse true --onepole false
 
-	Other Scripts:
-	datautil.py: Contains functions for creating dictionary, preprocessing and filtering data 
-	models.py: Contains Emb_Similarity and Model(the main one) 
-	train_evaluate.py: Train, Evaluate and active learning utilities(find_LC_query, find_EMC_query, find_uncertain_synthesis_query)
+#### Other Scripts:
+datautil.py: Contains functions for creating dictionary, preprocessing and filtering data 
 
-# Embedding Similarity Baseline
-	python emb_similarity.py
+models.py: Contains Emb_Similarity and Model(the main one) 
 
-# Majority Baseline
-	python majority.py
+train_evaluate.py: Train, Evaluate and active learning utilities(find_LC_query, find_EMC_query, find_uncertain_synthesis_query)
 
-# Active Learning Experiments: Runs 4 active approaches(Random, LC, EMC and Synthesis Based) and Plots the training examples vs Accuracy Plot. For details, please refer the report.
-	python active_learning.py
+### Embedding Similarity Baseline
+python emb_similarity.py
 
-# Score Analysis: Trains the model on verb physics dataset usign same parameters and calculates a proxy score of relatedness and plots the relative size and weights of some objects
-	python score_analysis.py
+### Majority Baseline
+python majority.py
 
-# Shell script that runs all configurations in Table1 10 times
-	sh run_table1.sh > table1_result
-	sh run_table2.sh > table2_result
-	sh run_table3.sh > table3_result
+### Active Learning Experiments: Runs 4 active approaches(Random, LC, EMC and Synthesis Based) and Plots the training examples vs Accuracy Plot. For details, please refer the report.
+python active_learning.py
 
-# Python script uses the results from the table1_result, table1_result and table3_result files, calculates mean, std and plots and save figures in figs folder
-	python stats_table1.py
-	python stats_table2.py
-	python stats_table3.py
+### Score Analysis: Trains the model on verb physics dataset usign same parameters and calculates a proxy score of relatedness and plots the relative size and weights of some objects
+python score_analysis.py
 
-# Significance Test File
-	python mcnemar.py
+### Shell script that runs all configurations in Table1 10 times
+sh run_table1.sh > table1_result
+sh run_table2.sh > table2_result
+sh run_table3.sh > table3_result
+
+### Python script uses the results from the table1_result, table1_result and table3_result files, calculates mean, std and plots and save figures in figs folder
+python stats_table1.py
+python stats_table2.py
+python stats_table3.py
+
+### Significance Test File
+python mcnemar.py
