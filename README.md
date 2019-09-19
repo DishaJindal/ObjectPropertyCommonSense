@@ -53,10 +53,12 @@ python emb_similarity.py
 ### Majority Baseline
 python majority.py
 
-### Active Learning Experiments: Runs 4 active approaches(Random, LC, EMC and Synthesis Based) and Plots the training examples vs Accuracy Plot. For details, please refer the report.
+### Active Learning Experiments
+Runs 4 active approaches(Random, LC, EMC and Synthesis Based) and Plots the training examples vs Accuracy Plot. For details, please refer the [report](https://github.com/DishaJindal/ObjectPropertyCommonSense/blob/master/Report.pdf).
 python active_learning.py
 
-### Score Analysis: Trains the model on verb physics dataset usign same parameters and calculates a proxy score of relatedness and plots the relative size and weights of some objects
+### Score Analysis
+Trains the model on verb physics dataset usign same parameters and calculates a proxy score of relatedness and plots the relative size and weights of some objects
 python score_analysis.py
 
 ### Shell script that runs all configurations in Table1 10 times
@@ -64,7 +66,8 @@ sh run_table1.sh > table1_result
 sh run_table2.sh > table2_result
 sh run_table3.sh > table3_result
 
-### Python script uses the results from the table1_result, table1_result and table3_result files, calculates mean, std and plots and save figures in figs folder
+### Shell scripts for statistics and plots
+Python script uses the results from the table1_result, table1_result and table3_result files, calculates mean, std and plots and save figures in figs folder
 python stats_table1.py
 python stats_table2.py
 python stats_table3.py
